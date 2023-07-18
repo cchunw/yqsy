@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.Class;
 import com.youceedu.interf.functions.Function;
-
+/**
+ * @Title:
+ * @Description: 查找类工具类
+ * @param: * @param null:
+ * @return: * @return: null
+ * @author chen chunwei
+ * @date 2023/7/18 15:42
+ */
 public class ClassFinderUtil{
 	/**
 	 * 初始化
