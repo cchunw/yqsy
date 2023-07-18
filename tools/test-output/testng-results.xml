@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[用例编号：1]]>
+    </line>
+    <line>
+      <![CDATA[请求接口：http://www.nuandao.com/public/lazyentrance]]>
+    </line>
+    <line>
+      <![CDATA[请求参数：isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+    </line>
+    <line>
+      <![CDATA[接口预期值：$.status=1;$.data.id=1048893]]>
+    </line>
+    <line>
+      <![CDATA[用例编号：2]]>
+    </line>
+    <line>
+      <![CDATA[请求接口：http://www.nuandao.com/public/lazyentrance]]>
+    </line>
+    <line>
+      <![CDATA[请求参数：isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+    </line>
+    <line>
+      <![CDATA[接口预期值：$.status=1;$.data.id=1048893]]>
+    </line>
+  </reporter-output>
+  <suite name="优测教育" duration-ms="1054" started-at="2023-06-25T06:06:50Z" finished-at="2023-06-25T06:06:51Z">
+    <groups>
+    </groups>
+    <test name="接口自动化" duration-ms="1054" started-at="2023-06-25T06:06:50Z" finished-at="2023-06-25T06:06:51Z">
+      <class name="com.youceedu.interf.test.TestRun">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.youceedu.interf.test.TestRun@6a2bcfcb]" name="beforeTest" is-config="true" duration-ms="11" started-at="2023-06-25T06:06:50Z" finished-at="2023-06-25T06:06:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\app_testcase.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="httpReq(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.youceedu.interf.test.TestRun@6a2bcfcb]" name="httpReq" duration-ms="498" started-at="2023-06-25T06:06:51Z" data-provider="dp" finished-at="2023-06-25T06:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[输入正确的账号及密码登录1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[POST]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://www.nuandao.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[/public/lazyentrance]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$.status=1;$.data.id=1048893]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[NO]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.youceedu.tools.http.HttpReqUtil.sendPost(HttpReqUtil.java:118)
+at com.youceedu.interf.test.TestRun.httpReq(TestRun.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[用例编号：1]]>
+            </line>
+            <line>
+              <![CDATA[请求接口：http://www.nuandao.com/public/lazyentrance]]>
+            </line>
+            <line>
+              <![CDATA[请求参数：isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+            </line>
+            <line>
+              <![CDATA[接口预期值：$.status=1;$.data.id=1048893]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- httpReq -->
+        <test-method status="FAIL" signature="httpReq(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.youceedu.interf.test.TestRun@6a2bcfcb]" name="httpReq" duration-ms="1" started-at="2023-06-25T06:06:51Z" data-provider="dp" finished-at="2023-06-25T06:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[输入正确的账号及密码登录2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[POST]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://www.nuandao.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[/public/lazyentrance]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$.status=1;$.data.id=1048893]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[NO]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.youceedu.tools.http.HttpReqUtil.sendPost(HttpReqUtil.java:118)
+at com.youceedu.interf.test.TestRun.httpReq(TestRun.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[用例编号：2]]>
+            </line>
+            <line>
+              <![CDATA[请求接口：http://www.nuandao.com/public/lazyentrance]]>
+            </line>
+            <line>
+              <![CDATA[请求参数：isajax=1&remember=1&email=1477223170@qq.com&password=654321&agreeterms=1&itype=&book=${__Time(ss,)}&m=1]]>
+            </line>
+            <line>
+              <![CDATA[接口预期值：$.status=1;$.data.id=1048893]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- httpReq -->
+      </class> <!-- com.youceedu.interf.test.TestRun -->
+    </test> <!-- 接口自动化 -->
+  </suite> <!-- 优测教育 -->
+</testng-results>

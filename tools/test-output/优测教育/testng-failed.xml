@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [优测教育]">
+  <parameter name="filePathParam" value="D:\\app_testcase.xlsx"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="接口自动化(failed)">
+    <classes>
+      <class name="com.youceedu.interf.test.TestRun">
+        <methods>
+          <include name="httpReq" invocation-numbers="0 1"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.youceedu.interf.test.TestRun -->
+    </classes>
+  </test> <!-- 接口自动化(failed) -->
+</suite> <!-- Failed suite [优测教育] -->
