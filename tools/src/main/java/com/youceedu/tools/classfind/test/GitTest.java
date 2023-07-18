@@ -1,15 +1,5 @@
 package com.youceedu.tools.classfind.test;
 
-import org.etsi.uri.x01903.v13.OCSPIdentifierType;
-
-/**
- * @program: yqsy
- * @ClassName GitTest
- * @Description TODO
- * @Author chen chunwei
- * @create: 2023-07-18 16:05
- * @Version 1.0
- */
 public class GitTest {
     public static void main(String[] args) {
         System.out.println("hello git3");
@@ -18,5 +8,6 @@ public class GitTest {
         System.out.println("master test1");
         System.out.println("hot-fix test2");
         System.out.println("222222222222");
+        System.out.println("1111111111111");
     }
 }
