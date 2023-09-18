@@ -122,7 +122,7 @@
                     <skipTests>false</skipTests>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
+                        <suiteXmlFile>res/${xmlFileName}</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>
